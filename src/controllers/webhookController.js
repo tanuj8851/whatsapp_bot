@@ -1,11 +1,7 @@
-const {
-  client,
-  whatsappNumber,
-  SelfWhatsappNumber,
-} = require("../config/twilioConfig");
 const xlsx = require("xlsx");
-const fs = require("fs");
 const path = require("path");
+
+const { client, whatsappNumber } = require("../config/twilioConfig");
 
 const dataFilePath = path.join(__dirname, "../../data/water_usage_data.xlsx");
 
